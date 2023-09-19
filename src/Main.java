@@ -14,17 +14,17 @@ public class Main {
         String c = s.nextLine();
         int numOfPeople = Integer.parseInt(c);
 //calculations
-        double totalTipAmt = totalbill*(tipPercentage/100);
-        double billWithTip= totalTipAmt+totalbill;
-        double billPerPerson = totalbill/numOfPeople;
-        double eachPersonTipAmt = billPerPerson*(tipPercentage/100);
-        double totalPerPerson = eachPersonTipAmt*numOfPeople;
+        double totalTipAmt = (totalbill*(tipPercentage/100));
+        double billWithTip= (totalTipAmt+totalbill);
+        double billPerPerson = (totalbill/numOfPeople);
+        double eachPersonTipAmt = (billPerPerson*(tipPercentage/100));
+        double totalPerPerson = (eachPersonTipAmt*numOfPeople);
 //output
         System.out.println();
-        System.out.println("Your total tip amount is: " + (double) Math.round(totalTipAmt*100)/100);
-        System.out.println("Your total bill including tip is: " + (double) Math.round(billWithTip*100)/100);
-        System.out.println("Your total tip per person is: " + (double) Math.round(billPerPerson*100)/100);
-        System.out.println("Your total per person is " + (double) Math.round(totalPerPerson*100)/100);
+        System.out.println("Your total tip amount is: $" + (double) Math.round(totalTipAmt*100)/100);
+        System.out.println("Your total bill including tip is: $" + (double) Math.round(billWithTip*100)/100);
+        System.out.println("Your total tip per person is: $" + (double) Math.round(eachPersonTipAmt*100)/100);
+        System.out.println("Your total per person is $" + (double) Math.round(totalPerPerson*100)/100);
 
     }
 }
